@@ -30,7 +30,10 @@ runs:
         GITHUB_ACTION_PATH: ${{ github.action_path }}
 
     - name: Run goodbye.sh
-      run: pwd; ${{ github.action_path }}/goodbye.sh
+      run: |
+        pwd; 
+        ls -ltr ${{ github.action_path }}/goodbye.sh; 
+        sh ${{ github.action_path }}/goodbye.sh
       shell: bash
 
 
