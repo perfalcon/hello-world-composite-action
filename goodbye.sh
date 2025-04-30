@@ -1,1 +1,1 @@
-"echo Goodby" 
+echo Goodbye

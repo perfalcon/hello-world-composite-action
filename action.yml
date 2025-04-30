@@ -33,7 +33,10 @@ runs:
       run: |
         pwd; 
         ls -ltr ${{ github.action_path }}/goodbye.sh; 
-        sh ${{ github.action_path }}/goodbye.sh
+        chmod +x ${{ github.action_path }}/goodbye.sh
+        ls -ltr ${{ github.action_path }}/goodbye.sh; 
+        ${{ github.action_path }}/goodbye.sh;
+
       shell: bash
 
 
